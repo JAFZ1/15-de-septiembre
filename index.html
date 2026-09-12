@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Invitación · 14 de Septiembre</title>
+  <title>Invitación · 15 de Septiembre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -817,7 +817,7 @@
           <div class="page-shade" aria-hidden="true"></div>
           <div class="cover-body">
             <h1>Colegio José Augusto Flores Zúniga</h1>
-            <p>Te invitamos a conmemorar la Batalla de San Jacinto.</p>
+            <p>Te invitamos a conmemorar los 205 años de la Firma del Acta de Independencia.</p>
             <button class="open-btn" type="button" onclick="abrir()">Abrir invitación</button>
           </div>
         </div>
@@ -833,36 +833,36 @@
       <div class="details" id="details">
         <div class="fade-top" aria-hidden="true"></div>
 
-        <!-- Contenido principal: 14 -->
+        <!-- Contenido principal: 15 -->
         <div class="photo-wrap">
-          <img class="photo" src="14 de septimbre.jpg" alt="14 de septiembre — Batalla de San Jacinto">
+          <img class="photo" src="15 de spetiembre.png" alt="15 de septiembre — Firma del Acta de Independencia">
         </div>
 
         <div class="block">
-          <div class="label"><span>Día 14 · San Jacinto</span></div>
-          <h3 class="title">Desfile patriótico</h3>
+          <div class="label"><span>Día 15 · Independencia</span></div>
+          <h3 class="title">Firma del Acta de Independencia</h3>
           <div class="meta">
             <article>
               <p class="k">Fecha</p>
-              <p class="v">14 de septiembre</p>
+              <p class="v">15 de septiembre</p>
             </article>
             <article>
               <p class="k">Hora</p>
-              <p class="v">6:30 a. m.</p>
+              <p class="v">7:00 a. m.</p>
             </article>
           </div>
           <div class="place">
             <div class="place-row">
-              <p class="k">Salida</p>
-              <p class="v">La Ermita</p>
+              <p class="k">Lugar</p>
+              <p class="v">Colegio Público José Augusto Flores Zúniga</p>
             </div>
             <div class="place-row">
-              <p class="k">Finalizamos en el</p>
-              <p class="v">Colegio José Augusto Flores Zúniga</p>
+              <p class="k">Valle</p>
+              <p class="v">La Laguna de Apoyo</p>
             </div>
           </div>
           <div class="agenda-btn">
-            <button class="btn btn-dark" type="button" onclick="verAgenda14()">Ver agenda del 14</button>
+            <button class="btn btn-dark" type="button" onclick="verAgenda15()">Ver agenda del 15</button>
           </div>
         </div>
 
@@ -871,38 +871,38 @@
         </div>
       </div>
 
-      <!-- 3. AGENDA 14 -->
-      <div class="agenda" id="agenda14">
+      <!-- 3. AGENDA 15 -->
+      <div class="agenda" id="agenda15">
         <div class="agenda-card">
-          <h3>Programa de la Batalla de San Jacinto</h3>
+          <p class="day">205 Aniversario</p>
+          <h3>Firma del Acta de Independencia</h3>
+          <p>Martes 15 de septiembre.</p>
           <ol class="agenda-list">
             <li>
-              <div><b>Invocación al Creador</b><span>Pastor Fermín Antonio Nicaragua.</span></div>
+              <div><b>Invocación al Creador</b><span>Pastor Francisco Obregón.</span></div>
             </li>
             <li>
               <div><b>Himno Nacional</b><span>Coro del Colegio Público José Augusto Flores Zúniga.</span></div>
             </li>
             <li>
-              <div><b>Palabras</b><span>Cro. Político del Distrito Dos, Bismarck Medina.</span></div>
+              <div><b>Palabras</b><span>Cro. representante político de la UV del Valle La Laguna, Zona Sur · Ana Méndez.</span></div>
             </li>
             <li>
-              <div><b>Palabras</b><span>Director del Centro, Cro. Guillermo Martínez.</span></div>
+              <div><b>Palabras de bienvenida</b><span>Compañero Jeferson Ruiz · Juventud Sandinista.</span></div>
             </li>
             <li>
-              <div><b>Compañer@s representantes UV Valle La Laguna, Zona Sur</b><span>Ana Méndez · Luis Téllez · Pedro Peña.</span></div>
+              <div><b>Presentación teatral de la Firma del Acta de Independencia de Centroamérica.</b></div>
             </li>
             <li>
-              <div><b>Por la Juventud del Valle Sur</b><span>Itzel Carranza · Jeferson Ruiz.</span></div>
+              <div><b>Palabras del Director del Centro</b><span>Guillermo Martínez.</span></div>
             </li>
             <li>
-              <div><b>Danza folclórica</b><span>Estudiante Britany Castro, de 11.º grado.</span></div>
-            </li>
-            <li>
-              <div><b>Breve reseña histórica de la Batalla de San Jacinto</b><span>Estudiante Ashley Alexandra Ruiz Calero, de quinto año.</span></div>
+              <div><b>Himno de la Educación de Nicaragua.</b></div>
             </li>
           </ol>
         </div>
         <div class="actions" style="padding:.4rem 0 0">
+          <button class="btn btn-dark" type="button" onclick="inicio()">Cerrar invitación</button>
           <button class="btn btn-soft" type="button" onclick="verDetalle()">Volver a la invitación</button>
         </div>
       </div>
@@ -979,14 +979,14 @@
       setTimeout(() => cover.classList.remove("turning"), 80);
     }
 
-    function verAgenda14() {
+    function verAgenda15() {
       details.classList.add("off");
-      agenda14.classList.add("on");
-      agenda14.scrollTop = 0;
+      agenda15.classList.add("on");
+      agenda15.scrollTop = 0;
     }
 
     function verDetalle() {
-      agenda14.classList.remove("on");
+      agenda15.classList.remove("on");
       details.classList.remove("off");
       details.scrollTop = 0;
       fadeTop.style.opacity = "0";
